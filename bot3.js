@@ -2,7 +2,7 @@ const { Client } = require('discord.js-selfbot-v13');
 const fs = require('fs');
 const cron = require('node-cron');
 
-const CHANNEL_ID = "1543140705206276158";
+const CHANNEL_ID = "1562748334119325726";
 const MIN_RANDOM_NUM = 1;
 const MAX_RANDOM_NUM = 10000;
 const MAX_MESSAGES = 1000; // Giới hạn 1000 tin nhắn mỗi acc
