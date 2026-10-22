@@ -46,7 +46,7 @@ async function startBot(token, index) {
             let sentCount = 0;
 
             while (sentCount < MAX_MESSAGES) {
-                // Nếu client đã bị hủy (do reset lúc 1:10 sáng giờ VN), dừng vòng lặp ngay lập tức
+                // Nếu client đã bị hủy, dừng vòng lặp ngay lập tức
                 if (!client.isReady()) break;
 
                 const numToSend = getRandomInt(MIN_RANDOM_NUM, MAX_RANDOM_NUM);
@@ -97,7 +97,7 @@ async function startBot(token, index) {
 
 async function runAllBots() {
     console.log('[System] Đang khởi động tiến trình gửi tin nhắn...');
-    const tokens = <button class="citation-flag" data-index="19">[cite: 19]</button>await getTokens();
+    const tokens = await getTokens();
     if (tokens.length === 0) {
         console.error("Không tìm thấy token nào!");
         return;
