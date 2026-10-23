@@ -1,7 +1,7 @@
 const http = require('http');
 const { spawn } = require('child_process');
 
-// 1. Tạo Server HTTP nhỏ để Render giữ ứng dụng luôn sống (Online 24/7)
+// 1. Tạo Server HTTP nhỏ để Render giữ ứng dụng luôn sống (Online 24/7)[cite: 8]
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
@@ -13,7 +13,7 @@ server.listen(PORT, () => {
     console.log(`[+] HTTP Server đã khởi chạy thành công trên cổng ${PORT}`);
 });
 
-// 2. Chỉ chạy tiến trình treo voice bot2.js
+// 2. Chỉ chạy tiến trình treo voice bot2.js[cite: 8]
 const scripts = [
     'bot2.js'
 ];
