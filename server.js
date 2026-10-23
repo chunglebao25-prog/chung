@@ -33,4 +33,4 @@ scripts.forEach((file) => {
             spawn('node', [file], { stdio: 'inherit', shell: true });
         }, 5000);
     });
-});
+})
